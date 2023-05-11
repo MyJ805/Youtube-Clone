@@ -1,0 +1,95 @@
+.thumnail {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.video-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+
+  cursor: pointer;
+}
+
+.video-author,
+.video-stats {
+  display: block;
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+  margin-right: 0;
+  cursor: pointer;
+  width: 0px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1199px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-pic {
+  width: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.thumnail-row {
+  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.video-time {
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+.video-info {
+  cursor: pointer;
+  position: relative;
+}
+
+.smtown,
+.title-link {
+  text-decoration: none;
+  color: black;
+}
